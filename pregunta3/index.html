@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta3</title>
+</head>
+<body>
+    <form id="userform">
+        <div class="formField">
+            <label for="username" >Usuario</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <br>
+        <div class="formField">
+            <label for="password" >Contraseña</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <br>
+        <div class="formField">
+            <input type="radio" name="type" id="type" value="client"
+            checked="checked" /> Cliente
+            <input type="radio" name="type" id="type" value="Admin" />
+            Administrador
+        </div>
+        <br>
+        <button type="submit" target="form#userform" currentTarget="form#userform" >Enviar</button>
+    </form>
+    
+    <br>
+    <div class="tableFormat">
+        <table id="userTable">
+            <tr>
+                <th>Usuario</th>
+                <th>Contraseña</th>
+                <th>Tipo</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
